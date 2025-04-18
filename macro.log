@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "c:\Users\cakic\Project\FF14-bot\main.pyw", line 57, in <module>
+    root.mainloop()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\cakic\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+    ~~~~~~~~~~~~~~~~^^^
+KeyboardInterrupt

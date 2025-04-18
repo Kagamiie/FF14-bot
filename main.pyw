@@ -51,6 +51,12 @@ class FFXIVMacroGUI:
                 simple_macro()
 
 if __name__ == "__main__":
-    root = tk.Tk()
-    app = FFXIVMacroGUI(root)
-    root.mainloop()
+    try:
+        root = tk.Tk()
+        app = FFXIVMacroGUI(root)
+        root.mainloop()
+    except Exception as e:
+        import traceback
+        with open("error.log", "w") as f:
+            f.write(traceback.format_exc())
+        print("Une erreur est survenue. Voir error.log pour plus de détails.")
